@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prediction</title>
+    <style>
+        body {
+            background-image: url('https://www.cuchd.in/placements/img/opportunity-img-5.jpg'); /* Replace 'your-background-image.jpg' with the actual image file path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        label, p {
+            color: black; /* Text color for labels and paragraphs */
+            font-weight: bold;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #ccc; /* Add a light gray border to input fields */
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensure padding and border don't increase the width of the elements */
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style the text enclosed in {{y}} */
+        .highlighted-text {
+            background-color: white; /* Highlight the text background in white */
+            color: black; /* Text color of the highlighted text */
+            font-weight: bold; /* Set font weight to bold */
+            display: inline-block; /* Ensure it's on the same line as other content */
+        }
+    </style>
+</head>
+<body>
+    <h1>Placement Prediction of Student</h1>
+    <form action="/login" method="post">
+        <label for="genders"> Choose the gender</label>
+        <select name="gender">
+            <option value="f">Female</option>
+            <option value="m">Male</option>
+        </select>
+
+        <p>SSC Percentage</p>
+        <input type="number" name="ssc"/>
+
+        <p>Higher Secondary Education Percentage</p>
+        <input type="number" name="hse"/>
+        <br>
+        <br>
+        <label for="hses">Higher Secondary Education Specialization</label>
+        <select name="hsep">
+            <option value="comm">Commerce</option>
+            <option value="scie">Science</option>
+            <option value="arts">Arts</option>
+        </select>
+
+        <p>Degree Percentage</p>
+        <input type="number" name="dp"/>
+
+        <br>
+        <br>
+        <label for="degree feild">Degree Field</label>
+        <select name="df">
+            <option value="commMang">Comm&Mgmt</option>
+            <option value="sciTech">Science&Tech</option>
+            <option value="others">Others</option>
+        </select>
+
+        <p>Work Experience</p>
+        <input type="number" name="we"/>
+
+        <p>Employability Test Percentage</p>
+        <input type="number" name="etp"/>
+
+        <p>MBA Percentage</p>
+        <input type="number" name="mbap"/>
+
+        <br>
+        <br>
+        <label for="mba Specialization">MBA Specialization</label>
+        <select name="mbasp">
+            <option value="mktHr">Mkt&HR</option>
+            <option value="mktFin">Mkt&Fin</option>
+        </select>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+
+    <!-- Highlighted text using a class -->
+    <h2><span class="highlighted-text">{{y}}</span></h2>
+</body>
+</html>
+
+
